@@ -1,0 +1,12 @@
+**/sessionData/
+**/.cache/
+**/Cache/
+**/GPUCache/
+**/Code Cache/
+**/IndexedDB/
+**/Local Storage/
+**/Session Storage/
+**/Service Worker/
+**/*.ldb
+**/Cookies
+**/Cookies-journal
