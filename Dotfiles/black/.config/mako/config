@@ -1,0 +1,19 @@
+font=JetBrains Mono Nerd Font 10
+
+# Насыщенный черный полупрозрачный фон
+background-color=#08080df2
+
+# Чистый белый текст
+text-color=#ffffff
+
+# Кроваво-красная рамка
+border-color=#e60026
+border-size=1
+border-radius=12
+
+# Полоса прогресса глубокого темно-красного цвета
+progress-color=#99001a
+
+[urgency=high]
+border-color=#ff5555
+text-color=#ff5555

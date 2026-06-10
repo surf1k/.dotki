@@ -1,0 +1,85 @@
+{
+    "logo": {
+        "type": "auto",
+        "source": "nixos",
+        "padding": {
+            "top": 2,
+            "right": 4
+        },
+        "color": {
+            "1": "35",
+            "2": "36"
+        }
+    },
+    "display": {
+        "separator": "  "
+    },
+    "modules": [
+        "break",
+        "break",
+        "break",
+        "break",
+        "break",
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "35"
+        },
+        "break",
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "35"
+        },
+        "break",
+        {
+            "type": "packages",
+            "format": "{}",
+            "key": " ",
+            "keyColor": "35"
+        },
+        "break",
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "35"
+        },
+        "break",
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "35"
+        },
+        "break",
+        {
+            "type": "wm",
+            "key": " ",
+            "keyColor": "35"
+        },
+        "break",
+        {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "35"
+        },
+        "break",
+        {
+            "type": "media",
+            "key": "󰝚 ",
+            "keyColor": "35"
+        },
+        "break",
+        "break",
+        "break",
+        {
+            "type": "command",
+            "key": " 󱜙",
+            "keyColor": "35",
+            "shell": "sh",
+            "text": "echo '\u001b[35mユミコ♡\u001b[0m'",
+            "format": "{1}"
+        },
+        "break",
+        "break"
+    ]
+}

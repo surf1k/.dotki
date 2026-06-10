@@ -1,0 +1,8 @@
+/* Твоя палитра в стиле C.C. и Code Geass */
+@define-color background #0A0A0A; /* Очень темный, почти черный фон (как на картинке) */
+@define-color foreground #FFFFFF; /* Чистый белый для основного текста модулей */
+@define-color color7     #C0C0C0; /* Серебристо-серый для неактивных/фоновых иконок */
+@define-color color9     #74D600; /* ТОТ САМЫЙ КИСЛОТНО-ЗЕЛЕНЫЙ с волос C.C. — твой акцент и ховер! */
+@define-color critical   #F53C3C; /* Критические ошибки (красный) */
+@define-color warning    #FFC600; /* Предупреждения (золотой с глаз C.C.) */
+@define-color charging   #74D600; /* Зарядка тоже будет зеленой, в тему */

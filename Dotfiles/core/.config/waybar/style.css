@@ -1,0 +1,70 @@
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+}
+
+#workspaces, #clock, #memory, #network, #wireplumber, #cava, .modules-left, .modules-center, .modules-right {
+    font-family: "Font Awesome 6 Free Solid", "Font Awesome 6 Free", "FontAwesome", "JetBrainsMono Nerd Font", "JetBrains Mono", sans-serif;
+    font-size: 15px;
+    color: #E2DAF5;
+}
+
+/* Лавандовые островки */
+.modules-left, .modules-center, .modules-right {
+    background-color: rgba(20, 16, 38, 0.75);
+    padding: 2px 12px;
+    margin-top: 4px;
+    border: 1px solid rgba(192, 132, 252, 0.25);
+    border-radius: 12px;
+}
+
+/* Отступы для всех модулей, включая CAVA */
+#memory, #network, #clock, #wireplumber, #cava {
+    margin: 0 8px;
+    padding: 0 4px;
+}
+
+/* Цвет для баров CAVA, чтобы они выделялись лавандовым градиентом */
+#cava {
+    color: #C084FC;
+}
+
+#workspaces button {
+    padding: 0px 8px;
+    color: #A294C2;
+    background-color: transparent;
+    border-radius: 6px;
+}
+
+#workspaces button:hover {
+    background-color: rgba(192, 132, 252, 0.2);
+    color: #F3F0FA;
+}
+
+#workspaces button.active {
+    background-color: #824CA6;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+#custom-media {
+    color: #C084FC;
+    margin: 0 10px;
+}
+
+
+#custom-mic {
+    margin: 0 8px;
+    padding: 2px 2px;
+}
+
+#custom-mic.muted {
+    color: #E2DAF5;
+}
+
+#custom-mic.unmuted {
+    color: #ff6e6e;
+}
+
+/* Чуть подправим память, чтобы она вписалась */
+#memory {
+    color: #E2DAF5;
+}

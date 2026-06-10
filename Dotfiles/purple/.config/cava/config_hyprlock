@@ -1,0 +1,12 @@
+[general]
+bars = 12
+
+[output]
+method = raw
+raw_target = /tmp/hyprlock_cava
+bit_format = 8bit
+ascii_max_range = 7
+
+[format]
+# Символы, которые будут имитировать полоски эквалайзера
+ascii_symbols =  ,▂,▃,▄,▅,▆,▇,█

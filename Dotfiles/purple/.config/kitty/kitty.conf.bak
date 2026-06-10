@@ -1,0 +1,62 @@
+# Цветовая схема
+foreground            #FFFFFF
+background            #0A0A0A
+selection_foreground  #0A0A0A
+selection_background  #74D600
+
+# Основные цвета (Black, Red, Green, Yellow, Blue, Magenta, Cyan, White)
+color0  #0A0A0A
+color8  #444444
+
+# Зеленый (волосы C.C.)
+color2  #74D600
+color10 #74D600
+
+# Желтый (глаза C.C.)
+color3  #FFC600
+color11 #FFC600
+
+# Остальные (нейтральные)
+color1  #F53C3C
+color9  #F53C3C
+color4  #26A65B
+color12 #26A65B
+color5  #C0C0C0
+color13 #FFFFFF
+color6  #74D600
+color14 #74D600
+color7  #C0C0C0
+color15 #FFFFFF
+
+# Прозрачность
+background_opacity 0.7
+dynamic_background_opacity yes
+
+# Курсор
+cursor                #74D600
+cursor_text_color     #0A0A0A
+
+# Шрифты (под твой стиль)
+# font_family      CodeNewRoman Nerd Font Propo
+font_size        15.0
+
+# Убираем рамки окна (для Hyprland)
+window_padding_width 10
+hide_window_decorations yes
+confirm_os_window_close 0
+shell_integration disabled
+
+# shit to resize
+allow_remote_control yes
+listen_on unix:/tmp/mykitty
+font_size 12.0
+map ctrl+shift+w toggle_layout stack
+
+
+
+# BEGIN_KITTY_FONTS
+font_family      family="Intel One Mono"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS

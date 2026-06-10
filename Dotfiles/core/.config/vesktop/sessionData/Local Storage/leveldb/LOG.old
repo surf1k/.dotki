@@ -1,0 +1,69 @@
+2026/06/04-20:43:03.354 29b7b Reusing MANIFEST /home/ym1co/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
+2026/06/04-20:43:03.359 29b7b Recovering log #1132
+2026/06/04-20:43:03.360 29b7b Reusing old log /home/ym1co/.config/vesktop/sessionData/Local Storage/leveldb/001132.log 
+2026/06/04-20:44:03.362 29b9b Level-0 table #1136: started
+2026/06/04-20:44:03.368 29b9b Level-0 table #1136: 47125 bytes OK
+2026/06/04-20:44:03.374 29b9b Delete type=0 #1132
+2026/06/04-20:47:03.534 29b9b Level-0 table #1138: started
+2026/06/04-20:47:03.545 29b9b Level-0 table #1138: 35423 bytes OK
+2026/06/04-20:47:03.552 29b9b Delete type=0 #1135
+2026/06/04-20:47:03.552 29b9b Compacting 4@0 + 1@1 files
+2026/06/04-20:47:03.557 29b9b Generated table #1139@0: 98 keys, 60298 bytes
+2026/06/04-20:47:03.557 29b9b Compacted 4@0 + 1@1 files => 60298 bytes
+2026/06/04-20:47:03.562 29b9b compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/06/04-20:47:03.563 29b9b Delete type=2 #1133
+2026/06/04-20:47:03.563 29b9b Delete type=2 #1131
+2026/06/04-20:47:03.563 29b9b Delete type=2 #1136
+2026/06/04-20:47:03.563 29b9b Delete type=2 #1129
+2026/06/04-20:47:03.563 29b9b Delete type=2 #1138
+2026/06/04-20:53:03.535 29b7b Level-0 table #1141: started
+2026/06/04-20:53:03.543 29b7b Level-0 table #1141: 34961 bytes OK
+2026/06/04-20:53:03.549 29b7b Delete type=0 #1137
+2026/06/04-20:59:03.533 29b9b Level-0 table #1143: started
+2026/06/04-20:59:03.539 29b9b Level-0 table #1143: 34287 bytes OK
+2026/06/04-20:59:03.546 29b9b Delete type=0 #1140
+2026/06/04-21:04:03.534 29b9b Level-0 table #1145: started
+2026/06/04-21:04:03.539 29b9b Level-0 table #1145: 58655 bytes OK
+2026/06/04-21:04:03.544 29b9b Delete type=0 #1142
+2026/06/04-21:10:03.534 29b9b Level-0 table #1147: started
+2026/06/04-21:10:03.538 29b9b Level-0 table #1147: 35556 bytes OK
+2026/06/04-21:10:03.541 29b9b Delete type=0 #1144
+2026/06/04-21:10:03.541 29b9b Compacting 4@0 + 1@1 files
+2026/06/04-21:10:03.544 29b9b Generated table #1148@0: 98 keys, 60411 bytes
+2026/06/04-21:10:03.544 29b9b Compacted 4@0 + 1@1 files => 60411 bytes
+2026/06/04-21:10:03.546 29b9b compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/06/04-21:10:03.547 29b9b Delete type=2 #1145
+2026/06/04-21:10:03.547 29b9b Delete type=2 #1147
+2026/06/04-21:10:03.547 29b9b Delete type=2 #1141
+2026/06/04-21:10:03.547 29b9b Delete type=2 #1139
+2026/06/04-21:10:03.547 29b9b Delete type=2 #1143
+2026/06/04-21:16:03.534 29b9b Level-0 table #1150: started
+2026/06/04-21:16:03.537 29b9b Level-0 table #1150: 35291 bytes OK
+2026/06/04-21:16:03.541 29b9b Delete type=0 #1146
+2026/06/04-21:18:03.534 29b9b Level-0 table #1152: started
+2026/06/04-21:18:03.541 29b9b Level-0 table #1152: 40922 bytes OK
+2026/06/04-21:18:03.548 29b9b Delete type=0 #1149
+2026/06/04-21:22:03.533 29b9b Level-0 table #1154: started
+2026/06/04-21:22:03.540 29b9b Level-0 table #1154: 34554 bytes OK
+2026/06/04-21:22:03.544 29b9b Delete type=0 #1151
+2026/06/04-21:27:03.533 29b9b Level-0 table #1156: started
+2026/06/04-21:27:03.540 29b9b Level-0 table #1156: 34815 bytes OK
+2026/06/04-21:27:03.545 29b9b Delete type=0 #1153
+2026/06/04-21:27:03.546 29b9b Compacting 4@0 + 1@1 files
+2026/06/04-21:27:03.553 29b9b Generated table #1157@0: 98 keys, 60505 bytes
+2026/06/04-21:27:03.553 29b9b Compacted 4@0 + 1@1 files => 60505 bytes
+2026/06/04-21:27:03.558 29b9b compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/06/04-21:27:03.559 29b9b Delete type=2 #1148
+2026/06/04-21:27:03.559 29b9b Delete type=2 #1150
+2026/06/04-21:27:03.559 29b9b Delete type=2 #1154
+2026/06/04-21:27:03.559 29b9b Delete type=2 #1152
+2026/06/04-21:27:03.559 29b9b Delete type=2 #1156
+2026/06/04-21:32:03.534 29b9b Level-0 table #1159: started
+2026/06/04-21:32:03.540 29b9b Level-0 table #1159: 38268 bytes OK
+2026/06/04-21:32:03.545 29b9b Delete type=0 #1155
+2026/06/04-21:36:03.534 29b9b Level-0 table #1161: started
+2026/06/04-21:36:03.539 29b9b Level-0 table #1161: 36359 bytes OK
+2026/06/04-21:36:03.544 29b9b Delete type=0 #1158
+2026/06/04-21:41:03.534 29b9b Level-0 table #1163: started
+2026/06/04-21:41:03.543 29b9b Level-0 table #1163: 31488 bytes OK
+2026/06/04-21:41:03.549 29b9b Delete type=0 #1160

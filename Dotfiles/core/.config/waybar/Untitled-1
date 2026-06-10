@@ -1,0 +1,143 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+    "logo": {
+        "type": "kitty",
+        "source": "logo.jpg", // <--- ВОТ ТУТ ПОПРАВЛЕНО (подтягивает из папки конфига)
+        "width": 28, // Возможно, придется подкрутить под размер твоего jpg
+        "height": 12,
+        "padding": {
+            "top": 2,
+            "left": 1,
+            "right": 2
+        }
+    },
+    "display": {
+        "separator": "",
+        "key": {
+            "width": 16
+        },
+        "bar": {
+            "char": {
+                "total": "─"
+            },
+            "color": {
+                "border": "green",
+                "total": "green"
+            },
+            "width": 10
+        },
+        "percent": {
+            "type": 3,
+            "ndigits": 2
+        },
+        "color": {
+            "title": "white",
+            "keys": "green",  // Сочный зеленый C.C.
+            "output": "white" // Весь текст белый
+        }
+    },
+    "modules": [
+        {
+            "type": "custom",
+            "key": "╭─System─────┬───────────────────────────────────────────────────╮",
+            "keyColor": "green"
+        },
+        {
+            "type": "host",
+            "key": "├╴󰌢 PC        │",
+            "keyColor": "green"
+        },
+        {
+            "type": "os",
+            "key": "├╴ OS        │",
+            "keyColor": "green"
+        },
+        {
+            "type": "wm",
+            "key": "├╴ WM        │",
+            "keyColor": "green"
+        },
+        {
+            "type": "kernel",
+            "key": "├╴ Kernel    │",
+            "keyColor": "green"
+        },
+        {
+            "type": "font",
+            "key": "├╴ Font      │",
+            "keyColor": "green"
+        },
+        {
+            "type": "uptime",
+            "key": "├╴ Uptime    │",
+            "keyColor": "green"
+        },
+        {
+            "type": "custom",
+            "key": "╰────────────┴───────────────────────────────────────────────────╯",
+            "keyColor": "green"
+        },
+        {
+            "type": "custom",
+            "key": "╭─Terminal───┬───────────────────────────────────────────────────╮",
+            "keyColor": "green"
+        },
+        {
+            "type": "shell",
+            "key": "├╴ Shell     │",
+            "keyColor": "green"
+        },
+        {
+            "type": "terminal",
+            "key": "├╴ Terminal  │",
+            "keyColor": "green"
+        },
+        {
+            "type": "terminalfont",
+            "key": "├╴ Font      │",
+            "keyColor": "green"
+        },
+        {
+            "type": "custom",
+            "key": "╰────────────┴───────────────────────────────────────────────────╯",
+            "keyColor": "green"
+        },
+        {
+            "type": "custom",
+            "key": "╭─Hardware───┬───────────────────────────────────────────────────╮",
+            "keyColor": "green"
+        },
+        {
+            "type": "display",
+            "key": "├╴󰍹 Display   │",
+            "keyColor": "green",
+            "format": "{1}×{2}, {3}Hz"
+        },
+        {
+            "type": "cpu",
+            "key": "├╴ CPU       │",
+            "keyColor": "green",
+            "format": "{1}"
+        },
+        {
+            "type": "gpu",
+            "key": "├╴󰾲 GPU       │",
+            "keyColor": "green"
+        },
+        {
+            "type": "disk",
+            "key": "├╴ Disk      │",
+            "keyColor": "green",
+            "format": "{13} {1} / {2}"
+        },
+        {
+            "type": "custom",
+            "key": "╰────────────┴──────────────────────────────────────────────────╯",
+            "keyColor": "green"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[32m 󰮯  \u001b[32m• \u001b[38;2;116;214;0m• \u001b[38;2;154;255;51m• \u001b[37m• \u001b[32m• \u001b[38;2;116;214;0m• \u001b[38;2;154;255;51m• \u001b[37m•"
+        }
+    ]
+}

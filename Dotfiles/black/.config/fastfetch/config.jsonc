@@ -1,0 +1,87 @@
+{
+    "logo": {
+        "type": "auto",
+        "source": "nixos",
+        "padding": {
+            "top": 2,
+            "right": 4
+        },
+        /* Двухцветный резкий логотип NixOS (Неоново-красный и чистый белый) */
+        "color": {
+            "1": "38;2;230;0;38",   // #e60026 (Красный)
+            "2": "38;2;255;255;255"  // #ffffff (Белый)
+        }
+    },
+    "display": {
+        "separator": "  "
+    },
+    "modules": [
+        "break",
+        "break",
+        "break",
+        "break",
+        "break",
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "38;2;230;0;38"
+        },
+        "break",
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "38;2;230;0;38"
+        },
+        "break",
+        {
+            "type": "packages",
+            "format": "{}",
+            "key": " ",
+            "keyColor": "38;2;230;0;38"
+        },
+        "break",
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "38;2;230;0;38"
+        },
+        "break",
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "38;2;230;0;38"
+        },
+        "break",
+        {
+            "type": "wm",
+            "key": " ",
+            "keyColor": "38;2;230;0;38"
+        },
+        "break",
+        {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "38;2;230;0;38"
+        },
+        "break",
+        {
+            "type": "media",
+            "key": "󰝚 ",
+            "keyColor": "38;2;230;0;38"
+        },
+        "break",
+        "break",
+        "break",
+        {
+            "type": "command",
+            "key": " 󱜙",
+            "keyColor": "38;2;230;0;38",
+            "shell": "sh",
+            /* Красное имя Юмико + контрастное белое сердечко */
+            "text": "echo '\u001b[38;2;230;0;38mユミко\u001b[38;2;255;255;255m♡\u001b[0m'",
+            "format": "{1}"
+        },
+        "break",
+        "break"
+    ]
+}

@@ -1,0 +1,39 @@
+# === Mako Configuration — Starry Night Mahiru Theme ===
+
+# Шрифт (поддерживает иконки)
+font=JetBrainsMono Nerd Font 10
+
+# Размеры и отступы панели уведомлений
+width=350
+height=110
+margin=10,10,10,10
+padding=15
+border-size=1
+border-radius=12
+
+# Иконки
+icons=1
+max-icon-size=64
+
+# Время отображения уведомления (5 секунд)
+default-timeout=5000
+
+# === Цветовая схема под космические обои ===
+
+# Глубокий сапфировый полупрозрачный фон
+background-color=#0b0f19e6
+
+# Серебряный текст звездного света
+text-color=#e2e8f0
+
+# Холодная светящаяся голубая рамка
+border-color=#60a5fa
+
+# Полоса прогресса (например, при загрузке файлов) мягкого фиолетового цвета
+progress-color=over #a78bfa
+
+# Настройки для критических (важных) уведомлений
+[urgency=high]
+border-color=#f38ba8
+text-color=#f38ba8
+default-timeout=10000

@@ -1,0 +1,68 @@
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+}
+
+#workspaces, #clock, #memory, #network, #wireplumber, #cava, .modules-left, .modules-center, .modules-right {
+    font-family: "Font Awesome 6 Free Solid", "Font Awesome 6 Free", "FontAwesome", "JetBrainsMono Nerd Font", "JetBrains Mono", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+/* Черные обсидиановые островки */
+.modules-left, .modules-center, .modules-right {
+    background-color: rgba(8, 8, 13, 0.85);
+    padding: 2px 12px;
+    margin-top: 4px;
+    border: 1px solid rgba(230, 0, 38, 0.3); /* Тонкая неоновая красная рамка */
+    border-radius: 12px;
+}
+
+#memory, #network, #clock, #wireplumber, #cava {
+    margin: 0 8px;
+    padding: 0 4px;
+}
+
+/* Цвет для баров CAVA — неоновый красный */
+#cava {
+    color: #e60026;
+}
+
+#workspaces button {
+    padding: 0px 8px;
+    color: rgba(255, 255, 255, 0.4);
+    background-color: transparent;
+    border-radius: 6px;
+}
+
+#workspaces button:hover {
+    background-color: rgba(230, 0, 38, 0.2);
+    color: #ffffff;
+}
+
+#workspaces button.active {
+    background-color: #e60026;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#custom-media {
+    color: #e60026;
+    margin: 0 10px;
+}
+
+#custom-mic {
+    margin: 0 8px;
+    padding: 2px 2px;
+}
+
+#custom-mic.muted {
+    color: #ffffff;
+}
+
+#custom-mic.unmuted {
+    color: #ff3b5c;
+}
+
+#memory {
+    color: #ffffff;
+}

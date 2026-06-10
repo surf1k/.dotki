@@ -1,0 +1,88 @@
+{
+    "logo": {
+        "type": "auto",
+        "source": "nixos",
+        "padding": {
+            "top": 2,
+            "right": 4
+        },
+        /* Твои новые фирменные цвета для логотипа NixOS */
+        "color": {
+            "1": "38;2;66;66;245",   // #4242f5 (Основной)
+            "2": "38;2;66;164;245"  // #42a4f5 (Дополнительный)
+        }
+        /* Чтобы вернуть ДЕФОЛТНЫЙ цвет логотипа, просто удали весь блок "color" выше */
+    },
+    "display": {
+        "separator": "  "
+    },
+    "modules": [
+        "break",
+        "break",
+        "break",
+        "break",
+        "break",
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "38;2;66;164;245"
+        },
+        "break",
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "38;2;66;164;245"
+        },
+        "break",
+        {
+            "type": "packages",
+            "format": "{}",
+            "key": " ",
+            "keyColor": "38;2;66;164;245"
+        },
+        "break",
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "38;2;66;164;245"
+        },
+        "break",
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "38;2;66;164;245"
+        },
+        "break",
+        {
+            "type": "wm",
+            "key": " ",
+            "keyColor": "38;2;66;164;245"
+        },
+        "break",
+        {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "38;2;66;164;245"
+        },
+        "break",
+        {
+            "type": "media",
+            "key": "󰝚 ",
+            "keyColor": "38;2;66;164;245"
+        },
+        "break",
+        "break",
+        "break",
+        {
+            "type": "command",
+            "key": " 󱜙",
+            "keyColor": "38;2;66;164;245",
+            "shell": "sh",
+            /* Твои новые цвета для подписи имени Юмико */
+            "text": "echo '\u001b[38;2;66;164;245mユミко\u001b[38;2;66;66;245m♡\u001b[0m'",
+            "format": "{1}"
+        },
+        "break",
+        "break"
+    ]
+}

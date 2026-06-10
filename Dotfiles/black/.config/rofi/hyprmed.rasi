@@ -1,0 +1,211 @@
+/**
+ * Theme : Yukiaim (Obsidian Black & Neon Red)
+ * Rofi Version: 1.7.3
+ **/
+
+/*****----- Configuration -----*****/
+configuration {
+    modi:                       "drun";
+    show-icons:                 true;
+    display-drun:               "";
+    drun-display-format:        "{name}";
+}
+
+/*****----- Global Properties -----*****/
+@import                          "shared/fonts.rasi"
+
+* {
+    /* Фирменная палитра Юкиэим под черные обои */
+    background:     #08080df5; /* Глубокий обсидиановый черный */
+    background-alt: #16161df2; /* Угольно-серый для поля ввода */
+    foreground:     #ffffff;   /* Чистый контрастный белый */
+    selected:       #e60026;   /* Яркий неоновый красный (в тон глазам) */
+    active:         #e60026;
+    urgent:         #ff5555;
+}
+
+/*****----- Main Window -----*****/
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       700px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      1px solid; /* Неоновая красная рамка */
+    border-radius:               12px;
+    border-color:                @selected;
+    background-color:            @background;
+    cursor:                      "default";
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     20px;
+    border:                      0px solid;
+    border-radius:               0px 0px 0px 0px;
+    border-color:                @selected;
+    background-color:            transparent;
+    children:                    [ "inputbar", "listview" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     15px;
+    border:                      0px solid;
+    border-radius:               12px;
+    border-color:                @selected;
+    background-color:            @background-alt;
+    text-color:                  @foreground;
+    children:                    [ "prompt", "entry" ];
+}
+
+prompt {
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+textbox-prompt-colon {
+    enabled:                     true;
+    expand:                      false;
+    str:                         "::";
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+entry {
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "Search...";
+    placeholder-color:           inherit;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     2;
+    lines:                       8;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     5px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @selected;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      "default";
+}
+scrollbar {
+    handle-width:                5px ;
+    handle-color:                @selected;
+    border-radius:              0px;
+    background-color:            @background-alt;
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     5px;
+    border:                      0px solid;
+    border-radius:               12px;
+    border-color:                @selected;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      pointer;
+}
+
+/* ОБЫЧНЫЕ СТРОКИ */
+element normal.normal {
+    background-color:            @background;
+    text-color:                  @foreground;
+}
+element normal.urgent {
+    background-color:            @background;
+    text-color:                  @urgent;
+}
+element normal.active {
+    background-color:            @background;
+    text-color:                  @active;
+}
+
+/* ВЫБРАННЫЕ СТРОКИ */
+element selected.normal {
+    background-color:            @selected;
+    text-color:                  #08080d; /* Черный текст при выборе на красном фоне */
+}
+element selected.urgent {
+    background-color:            @urgent;
+    text-color:                  #08080d;
+}
+element selected.active {
+    background-color:            @selected;
+    text-color:                  #08080d;
+}
+
+/* ЧЕРЕДУЮЩИЕСЯ СТРОКИ */
+element alternate.normal {
+    background-color:            @background;
+    text-color:                  @foreground;
+}
+element alternate.urgent {
+    background-color:            @background;
+    text-color:                  @urgent;
+}
+element alternate.active {
+    background-color:            @background;
+    text-color:                  @active;
+}
+
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        32px;
+    cursor:                      inherit;
+}
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    highlight:                   inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+/*****----- Message -----*****/
+error-message {
+    padding:                     15px;
+    border:                      2px solid;
+    border-radius:               12px;
+    border-color:                @selected;
+    background-color:            @background;
+    text-color:                  @foreground;
+}
+textbox {
+    background-color:            @background;
+    text-color:                  @foreground;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    highlight:                   none;
+}

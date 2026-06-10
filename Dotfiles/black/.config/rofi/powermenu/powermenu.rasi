@@ -1,0 +1,172 @@
+/*****----- Configuration -----*****/
+configuration {
+    show-icons:                 false;
+}
+
+/*****----- Global Properties -----*****/
+/* Все внешние импорты удалены для стабильности путей */
+* {
+    /* Твоя новая агрессивная красно-черная палитра Юкиэим */
+    neon-red:       #e60026; /* Неоновый красный акцент */
+    blood-red:      #99001a; /* Глубокий темно-красный */
+    bg:             #08080df2; /* Обсидиановый черный полупрозрачный фон */
+    
+    font:           "JetBrainsMono Nerd Font 10"; /* Прописан напрямую */
+    background:     @bg;
+    foreground:     #ffffff; /* Кристально белый текст */
+    selected:       @neon-red;
+    urgent:         #ff5555;
+    active:         @blood-red;
+}
+
+/*
+USE_BUTTONS=YES
+*/
+
+/*****----- Main Window -----*****/
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       800px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      1px solid;
+    border-radius:               15px;
+    border-color:                rgba(230, 0, 38, 0.25); /* Тонкая рамка с красным свечением */
+    cursor:                      "default";
+    background-color:            transparent;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      48px;
+    border-radius:               15px;
+    border-color:                transparent;
+    background-color:            @background;
+    children:                    [ "message", "listview" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    spacing:                     15px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px;
+    border-radius:               0px;
+    border-color:                transparent;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    children:                    [ "textbox-prompt-colon", "prompt"];
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+textbox-prompt-colon {
+    enabled:                     true;
+    expand:                      false;
+    str:                         "";
+    padding:                     12px 16px;
+    border-radius:               0px;
+    background-color:            @urgent;
+    text-color:                  @background;
+}
+prompt {
+    enabled:                     true;
+    padding:                     12px;
+    border-radius:               0px;
+    background-color:            @active;
+    text-color:                  @foreground;
+}
+
+/*****----- Message -----*****/
+message {
+    enabled:                     true;
+    margin:                      0px 100px;
+    padding:                     15px;
+    border:                      0px solid;
+    border-radius:               15px;
+    border-color:                @selected;
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+textbox {
+    background-color:            inherit;
+    text-color:                  inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    placeholder-color:           @foreground;
+    blink:                       true;
+    markup:                      true;
+}
+error-message {
+    padding:                     12px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @selected;
+    background-color:            @background;
+    text-color:                  @foreground;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     5;
+    lines:                       1;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     15px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                transparent;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     45px 10px;
+    border:                      1px solid;
+    border-radius:               20px;
+    border-color:                rgba(230, 0, 38, 0.15); /* Мягкое свечение вокруг кнопок */
+    background-color:            rgba(255, 255, 255, 0.02);
+    text-color:                  @foreground;
+    cursor:                      pointer;
+}
+element-text {
+    font:                        "Feather 32";
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+element selected.normal {
+    background-color:            @selected;
+    border-color:                @selected;
+    text-color:                  #08080d; /* Темный текст на ярко-красном фоне при выборе */
+}

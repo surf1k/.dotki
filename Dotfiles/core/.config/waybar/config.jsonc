@@ -1,0 +1,117 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 36,
+    "spacing": 4,
+
+    // Перенесли звук и добавили cava налево, центр освободили под часы
+    "modules-left": ["hyprland/workspaces", "custom/media", "cava"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray","memory", "hyprland/language", "clock#date"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "tooltip": false,
+        "on-click": "activate",
+        "all-outputs": true,
+        "ignore-workspaces": ["10"],
+        "format-icons": {
+            "1": "1: ",
+            "2": "2: ",
+            "3": "3: ",
+            "4": "4: "
+        }
+    },
+
+    "tray": {
+        "show-passive-items": false,
+        "icon-size": 21,
+        "spacing": 10
+    },
+     
+    "hyprland/language": {
+        "format": " {}",
+        "format-en": "US",
+        "format-ru": "RU",
+        "on-click": "hyprctl switchxkblayout all next"
+    },
+
+    "custom/media": {
+    "format": "{icon}  {text}",
+    "format-icons": {
+        "spotify": "\uf1bc",
+        "firefox": "\uf269",
+        "chromium": "\uf268",
+        "chrome": "\uf268",
+        "vlc": "\uf03d",
+        "default": "\uf001"
+    },
+    "max-length": 40,
+    "interval": 1,
+    "exec": "playerctl metadata --format '{\"text\": \"{{ artist }} - {{ title }}\", \"class\": \"{{ playerName }}\"}'",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "escape": true
+},
+
+    "custom/mic": {
+        "exec": "~/.config/hypr/scripts/mic_status.sh",
+        "return-type": "json",
+        "signal": 8,
+        "interval": 1,
+        "on-click": "~/.config/hypr/scripts/toggle_mic.sh"
+    },
+    "cava": {
+        "framerate": 60,
+        "autosens": 1,
+        "bars": 12,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "method": "pipewire",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monolithic": false,
+        "input_delay": 2,
+        "format-icons": [" ", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+            "on-click-right": "mode"
+        }
+    },
+
+    "clock": {
+        "interval": 1,
+        "tooltip": false,
+        "format": "{:%H:%M:%S} "
+    },
+
+    "clock#date": {
+        "tooltip": false,
+        "format": "{:%d/%m/%y} "
+    },
+
+    "network#ethernet": {
+        "interface": "enp3s0",
+        "family": "ipv4",
+        "format-ethernet": "",
+        "format-disconnected": "",
+        "format-disabled": "",
+        "tooltip-format-ethernet": "{ipaddr}\n{bandwidthUpBytes}  {bandwidthDownBytes} "
+    },
+
+     "memory": {
+        "interval": 1, 
+        "format": "  {used:0.1f}G/{total:0.1f}G", 
+        "on-click": "tilix -e btop"
+    }, 
+
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": ["", ""],
+        "tooltip": false
+    }
+}
