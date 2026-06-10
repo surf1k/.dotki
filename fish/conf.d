@@ -1,0 +1,1 @@
+../../Dotfiles/black/.config/fish/conf.d
